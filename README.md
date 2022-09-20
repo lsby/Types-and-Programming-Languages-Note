@@ -809,7 +809,7 @@ let {C, c} = counterADT in
 
 *   `{∃X,T}`等价于`∀Y.(∀X.T→Y)→Y`.
 
-*   `{*S,t}`等价于`λY.λf:(∀X.T→Y).f[S](t)`.
+*   `{*S,t} as {∃X,T}`等价于`λY.λf:(∀X.T→Y).f[S](t)`.
 
 *   `let {X,x}=t1 in t2`等价于`t1[T2](λX.λx:T11.t2)`.
 
